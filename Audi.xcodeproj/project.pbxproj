@@ -1,0 +1,386 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7D4354EA24D76CBA00563A44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4354E924D76CBA00563A44 /* AppDelegate.swift */; };
+		7D4354EC24D76CBA00563A44 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4354EB24D76CBA00563A44 /* SceneDelegate.swift */; };
+		7D4354F124D76CBA00563A44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D4354EF24D76CBA00563A44 /* Main.storyboard */; };
+		7D4354F324D76CBC00563A44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D4354F224D76CBC00563A44 /* Assets.xcassets */; };
+		7D4354F624D76CBC00563A44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D4354F424D76CBC00563A44 /* LaunchScreen.storyboard */; };
+		7D68891724D7714F00E8931E /* AudiType-ExtendedNormal_4.03.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7D68891324D7714F00E8931E /* AudiType-ExtendedNormal_4.03.otf */; };
+		7D68891824D7714F00E8931E /* AudiType-ExtendedBold_4.03.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7D68891424D7714F00E8931E /* AudiType-ExtendedBold_4.03.otf */; };
+		7D68891924D7714F00E8931E /* AudiType-ExtendedBoldItalic_4.03.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7D68891524D7714F00E8931E /* AudiType-ExtendedBoldItalic_4.03.otf */; };
+		7D68891A24D7714F00E8931E /* AudiType-ExtendedItalic_4.03.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7D68891624D7714F00E8931E /* AudiType-ExtendedItalic_4.03.otf */; };
+		7D68891C24D83B9200E8931E /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D68891B24D83B9200E8931E /* HomeTableViewController.swift */; };
+		7D68891E24D83C1900E8931E /* Vehicles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D68891D24D83C1900E8931E /* Vehicles.swift */; };
+		7D68892024D83E7E00E8931E /* VehiclesDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D68891F24D83E7E00E8931E /* VehiclesDAO.swift */; };
+		7D68892224D841C200E8931E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D68892124D841C200E8931E /* TableViewCell.swift */; };
+		7D68892424D84E3100E8931E /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D68892324D84E3100E8931E /* DetailsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7D4354E624D76CBA00563A44 /* Audi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Audi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D4354E924D76CBA00563A44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7D4354EB24D76CBA00563A44 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7D4354F024D76CBA00563A44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7D4354F224D76CBC00563A44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7D4354F524D76CBC00563A44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7D4354F724D76CBC00563A44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D68891324D7714F00E8931E /* AudiType-ExtendedNormal_4.03.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AudiType-ExtendedNormal_4.03.otf"; sourceTree = "<group>"; };
+		7D68891424D7714F00E8931E /* AudiType-ExtendedBold_4.03.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AudiType-ExtendedBold_4.03.otf"; sourceTree = "<group>"; };
+		7D68891524D7714F00E8931E /* AudiType-ExtendedBoldItalic_4.03.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AudiType-ExtendedBoldItalic_4.03.otf"; sourceTree = "<group>"; };
+		7D68891624D7714F00E8931E /* AudiType-ExtendedItalic_4.03.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AudiType-ExtendedItalic_4.03.otf"; sourceTree = "<group>"; };
+		7D68891B24D83B9200E8931E /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		7D68891D24D83C1900E8931E /* Vehicles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicles.swift; sourceTree = "<group>"; };
+		7D68891F24D83E7E00E8931E /* VehiclesDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesDAO.swift; sourceTree = "<group>"; };
+		7D68892124D841C200E8931E /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		7D68892324D84E3100E8931E /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7D4354E324D76CBA00563A44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7D4354DD24D76CBA00563A44 = {
+			isa = PBXGroup;
+			children = (
+				7D4354E824D76CBA00563A44 /* Audi */,
+				7D4354E724D76CBA00563A44 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7D4354E724D76CBA00563A44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7D4354E624D76CBA00563A44 /* Audi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7D4354E824D76CBA00563A44 /* Audi */ = {
+			isa = PBXGroup;
+			children = (
+				7D4354FD24D76EFF00563A44 /* Fonts */,
+				7D4354E924D76CBA00563A44 /* AppDelegate.swift */,
+				7D4354EB24D76CBA00563A44 /* SceneDelegate.swift */,
+				7D68891B24D83B9200E8931E /* HomeTableViewController.swift */,
+				7D4354EF24D76CBA00563A44 /* Main.storyboard */,
+				7D4354F224D76CBC00563A44 /* Assets.xcassets */,
+				7D4354F424D76CBC00563A44 /* LaunchScreen.storyboard */,
+				7D4354F724D76CBC00563A44 /* Info.plist */,
+				7D68891D24D83C1900E8931E /* Vehicles.swift */,
+				7D68891F24D83E7E00E8931E /* VehiclesDAO.swift */,
+				7D68892124D841C200E8931E /* TableViewCell.swift */,
+				7D68892324D84E3100E8931E /* DetailsViewController.swift */,
+			);
+			path = Audi;
+			sourceTree = "<group>";
+		};
+		7D4354FD24D76EFF00563A44 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7D68891424D7714F00E8931E /* AudiType-ExtendedBold_4.03.otf */,
+				7D68891524D7714F00E8931E /* AudiType-ExtendedBoldItalic_4.03.otf */,
+				7D68891624D7714F00E8931E /* AudiType-ExtendedItalic_4.03.otf */,
+				7D68891324D7714F00E8931E /* AudiType-ExtendedNormal_4.03.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7D4354E524D76CBA00563A44 /* Audi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D4354FA24D76CBC00563A44 /* Build configuration list for PBXNativeTarget "Audi" */;
+			buildPhases = (
+				7D4354E224D76CBA00563A44 /* Sources */,
+				7D4354E324D76CBA00563A44 /* Frameworks */,
+				7D4354E424D76CBA00563A44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Audi;
+			productName = Audi;
+			productReference = 7D4354E624D76CBA00563A44 /* Audi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7D4354DE24D76CBA00563A44 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					7D4354E524D76CBA00563A44 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = 7D4354E124D76CBA00563A44 /* Build configuration list for PBXProject "Audi" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7D4354DD24D76CBA00563A44;
+			productRefGroup = 7D4354E724D76CBA00563A44 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7D4354E524D76CBA00563A44 /* Audi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7D4354E424D76CBA00563A44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D4354F624D76CBC00563A44 /* LaunchScreen.storyboard in Resources */,
+				7D68891924D7714F00E8931E /* AudiType-ExtendedBoldItalic_4.03.otf in Resources */,
+				7D4354F324D76CBC00563A44 /* Assets.xcassets in Resources */,
+				7D68891A24D7714F00E8931E /* AudiType-ExtendedItalic_4.03.otf in Resources */,
+				7D68891724D7714F00E8931E /* AudiType-ExtendedNormal_4.03.otf in Resources */,
+				7D68891824D7714F00E8931E /* AudiType-ExtendedBold_4.03.otf in Resources */,
+				7D4354F124D76CBA00563A44 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7D4354E224D76CBA00563A44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D68891E24D83C1900E8931E /* Vehicles.swift in Sources */,
+				7D68891C24D83B9200E8931E /* HomeTableViewController.swift in Sources */,
+				7D4354EA24D76CBA00563A44 /* AppDelegate.swift in Sources */,
+				7D68892224D841C200E8931E /* TableViewCell.swift in Sources */,
+				7D68892424D84E3100E8931E /* DetailsViewController.swift in Sources */,
+				7D4354EC24D76CBA00563A44 /* SceneDelegate.swift in Sources */,
+				7D68892024D83E7E00E8931E /* VehiclesDAO.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7D4354EF24D76CBA00563A44 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D4354F024D76CBA00563A44 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7D4354F424D76CBC00563A44 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D4354F524D76CBC00563A44 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7D4354F824D76CBC00563A44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7D4354F924D76CBC00563A44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7D4354FB24D76CBC00563A44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZQNPYS9F35;
+				INFOPLIST_FILE = Audi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.caetanoapp.Audi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7D4354FC24D76CBC00563A44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZQNPYS9F35;
+				INFOPLIST_FILE = Audi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.caetanoapp.Audi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7D4354E124D76CBA00563A44 /* Build configuration list for PBXProject "Audi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D4354F824D76CBC00563A44 /* Debug */,
+				7D4354F924D76CBC00563A44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D4354FA24D76CBC00563A44 /* Build configuration list for PBXNativeTarget "Audi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D4354FB24D76CBC00563A44 /* Debug */,
+				7D4354FC24D76CBC00563A44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7D4354DE24D76CBA00563A44 /* Project object */;
+}
