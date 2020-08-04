@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E13866B7456DFBD40BFE7B2 /* Pods_Audi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D30CAF785CAC452FEA4F4B /* Pods_Audi.framework */; };
 		7D4354EA24D76CBA00563A44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4354E924D76CBA00563A44 /* AppDelegate.swift */; };
 		7D4354EC24D76CBA00563A44 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4354EB24D76CBA00563A44 /* SceneDelegate.swift */; };
 		7D4354F124D76CBA00563A44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D4354EF24D76CBA00563A44 /* Main.storyboard */; };
@@ -24,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		047298EBB1B9873A5794EEDD /* Pods-Audi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audi.release.xcconfig"; path = "Target Support Files/Pods-Audi/Pods-Audi.release.xcconfig"; sourceTree = "<group>"; };
+		62D30CAF785CAC452FEA4F4B /* Pods_Audi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Audi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D4354E624D76CBA00563A44 /* Audi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Audi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D4354E924D76CBA00563A44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D4354EB24D76CBA00563A44 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +43,7 @@
 		7D68891F24D83E7E00E8931E /* VehiclesDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesDAO.swift; sourceTree = "<group>"; };
 		7D68892124D841C200E8931E /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		7D68892324D84E3100E8931E /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		C06AB1CA65F1978E6C8EFF26 /* Pods-Audi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audi.debug.xcconfig"; path = "Target Support Files/Pods-Audi/Pods-Audi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E13866B7456DFBD40BFE7B2 /* Pods_Audi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +63,8 @@
 			children = (
 				7D4354E824D76CBA00563A44 /* Audi */,
 				7D4354E724D76CBA00563A44 /* Products */,
+				CFD003BAA5D138B40E77E7E1 /* Pods */,
+				8CC68BB48D3CCB4B73D83540 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +106,24 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		8CC68BB48D3CCB4B73D83540 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62D30CAF785CAC452FEA4F4B /* Pods_Audi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CFD003BAA5D138B40E77E7E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C06AB1CA65F1978E6C8EFF26 /* Pods-Audi.debug.xcconfig */,
+				047298EBB1B9873A5794EEDD /* Pods-Audi.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D4354FA24D76CBC00563A44 /* Build configuration list for PBXNativeTarget "Audi" */;
 			buildPhases = (
+				6C9958E6ECA9E49CDC224261 /* [CP] Check Pods Manifest.lock */,
 				7D4354E224D76CBA00563A44 /* Sources */,
 				7D4354E324D76CBA00563A44 /* Frameworks */,
 				7D4354E424D76CBA00563A44 /* Resources */,
+				239A87DD5AD6427F40C95DE9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -167,6 +194,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		239A87DD5AD6427F40C95DE9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Audi/Pods-Audi-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Audi/Pods-Audi-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Audi/Pods-Audi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C9958E6ECA9E49CDC224261 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Audi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7D4354E224D76CBA00563A44 /* Sources */ = {
@@ -323,6 +392,7 @@
 		};
 		7D4354FB24D76CBC00563A44 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C06AB1CA65F1978E6C8EFF26 /* Pods-Audi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -342,6 +412,7 @@
 		};
 		7D4354FC24D76CBC00563A44 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 047298EBB1B9873A5794EEDD /* Pods-Audi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

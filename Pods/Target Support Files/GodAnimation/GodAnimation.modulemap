@@ -1,0 +1,6 @@
+framework module GodAnimation {
+  umbrella header "GodAnimation-umbrella.h"
+
+  export *
+  module * { export * }
+}

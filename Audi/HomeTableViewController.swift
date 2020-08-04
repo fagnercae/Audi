@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import GodAnimation
 
 class HomeTableViewController: UITableViewController {
     
@@ -23,9 +24,6 @@ class HomeTableViewController: UITableViewController {
     
     func setupInterface() {
         overrideUserInterfaceStyle = .dark
-        var preferredStatusBarStyle: UIStatusBarStyle {
-            return .lightContent
-        }
     }
 
     // MARK: - Table view data source
@@ -47,6 +45,11 @@ class HomeTableViewController: UITableViewController {
         cell.carImageView.image = UIImage(named: vehicles.picture)
 
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        GodAnimation.cellAnimation(type: .zoom, cell: cell, indexPath: indexPath) {  }
+        
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

@@ -1,0 +1,6 @@
+framework module Pods_Audi {
+  umbrella header "Pods-Audi-umbrella.h"
+
+  export *
+  module * { export * }
+}

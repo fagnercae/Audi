@@ -33,6 +33,9 @@ class DetailsViewController: UIViewController {
         carImageView.image = UIImage(named: car.picture)
         modelNameLabel.text = car.model
         detailsTextView.text = car.details
+        carImageView.layer.cornerRadius = 20
+        detailsTextView.layer.cornerRadius = 20
+    
     }
 
 }

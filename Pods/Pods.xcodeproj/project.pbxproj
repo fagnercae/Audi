@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		37E63C2561EE5AA24214DA3A9742C09E /* GodAnimation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B0263A1FF7EB978787B4F4CE3AF23F /* GodAnimation-dummy.m */; };
+		5D2CEDA63902CB42C46EB092C543426E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		630A50DED19F291F9D1496919EF2A50E /* GodAnimation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 87F07C836FEE1B8A45D6E97F4D875933 /* GodAnimation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FF74447172DE7A450A080A5B573A575 /* Pods-Audi-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8E41FF3300D467E27F56C09122168F /* Pods-Audi-dummy.m */; };
+		7A99E19CEA164CE8B0123B3849604B0A /* AnimationEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = D080D144FB77FF418E5E5B19588CA0C6 /* AnimationEnums.swift */; };
+		8400C2AC7D7E120E5C7F3EE594D86348 /* GodAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = B4FB47F00568E71A81D60CE77345A935 /* GodAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A030F53B9BE83DFCDF0B1C027C130488 /* Pods-Audi-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D9795DE95C369ECA371DD68B9F51A904 /* Pods-Audi-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C67DF3343EECBE2780EFA30745161110 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		E863644892EFEDEC0DBD84F26937EFA5 /* GodAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961E79D4B0F801FE411D79366FF1A0D2 /* GodAnimation.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BD6CD47990FC5B88F768FDA8B31CAFE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DBB96D852AF2956A0A27F3C08DF3CEF;
+			remoteInfo = GodAnimation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		266936016ABFAEF00AD2863834B44C95 /* GodAnimation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GodAnimation.modulemap; sourceTree = "<group>"; };
+		2E7A047FA4236829615A611B4C458C2E /* Pods-Audi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Audi.debug.xcconfig"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		43E74A564F5D76F05C5F5B6158C6F7EE /* Pods-Audi-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Audi-Info.plist"; sourceTree = "<group>"; };
+		4A53265CC9FC651634306413BA79BA34 /* Pods_Audi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Audi.framework; path = "Pods-Audi.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		64E2F36CC72081987F73147E9B041DB8 /* GodAnimation-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GodAnimation-Info.plist"; sourceTree = "<group>"; };
+		87F07C836FEE1B8A45D6E97F4D875933 /* GodAnimation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GodAnimation-umbrella.h"; sourceTree = "<group>"; };
+		8B97235E8B4ACA61BDAE5D50819C49CC /* GodAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GodAnimation.release.xcconfig; sourceTree = "<group>"; };
+		961E79D4B0F801FE411D79366FF1A0D2 /* GodAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GodAnimation.swift; path = GodAnimation/GodAnimation.swift; sourceTree = "<group>"; };
+		98C74B3D36473C4BC1FC302B9BFB314E /* GodAnimation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GodAnimation-prefix.pch"; sourceTree = "<group>"; };
+		9BCAC98B260DA0255850F387A12EA851 /* GodAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GodAnimation.framework; path = GodAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A3EC4476545F69519D28572C199097D7 /* Pods-Audi-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Audi-acknowledgements.plist"; sourceTree = "<group>"; };
+		AE8E41FF3300D467E27F56C09122168F /* Pods-Audi-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Audi-dummy.m"; sourceTree = "<group>"; };
+		B3B537B0B9B55431029EE67D1EADF1CD /* Pods-Audi-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Audi-frameworks.sh"; sourceTree = "<group>"; };
+		B4FB47F00568E71A81D60CE77345A935 /* GodAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GodAnimation.h; path = GodAnimation/GodAnimation.h; sourceTree = "<group>"; };
+		BC58B06AD4716F01752D3E3F7CDC032E /* GodAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GodAnimation.debug.xcconfig; sourceTree = "<group>"; };
+		D080D144FB77FF418E5E5B19588CA0C6 /* AnimationEnums.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationEnums.swift; path = GodAnimation/AnimationEnums.swift; sourceTree = "<group>"; };
+		D2B0263A1FF7EB978787B4F4CE3AF23F /* GodAnimation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GodAnimation-dummy.m"; sourceTree = "<group>"; };
+		D83AEC2E8362A6F6E0B89AC932CF103C /* Pods-Audi.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Audi.modulemap"; sourceTree = "<group>"; };
+		D9795DE95C369ECA371DD68B9F51A904 /* Pods-Audi-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Audi-umbrella.h"; sourceTree = "<group>"; };
+		DF38F4B12CFF5061E78D027055AB755D /* Pods-Audi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Audi.release.xcconfig"; sourceTree = "<group>"; };
+		F2898FA6D2DADD18CC4D2AD7EB4F212D /* Pods-Audi-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Audi-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2837DB2FE5A24DB331292134C0351587 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D2CEDA63902CB42C46EB092C543426E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37FF8E50321B83DEDDE03C6261F6EABF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C67DF3343EECBE2780EFA30745161110 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E376267E19B5415EC7CF4D36D2F0105 /* GodAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				D080D144FB77FF418E5E5B19588CA0C6 /* AnimationEnums.swift */,
+				B4FB47F00568E71A81D60CE77345A935 /* GodAnimation.h */,
+				961E79D4B0F801FE411D79366FF1A0D2 /* GodAnimation.swift */,
+				AE9B346B3EEE7B5AE00A78A9382F343F /* Support Files */,
+			);
+			name = GodAnimation;
+			path = GodAnimation;
+			sourceTree = "<group>";
+		};
+		406F1C4AFD9AA49E10526FCB3CAF328D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1E376267E19B5415EC7CF4D36D2F0105 /* GodAnimation */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6CD63046199C4EFE81B3045FDBB38CB2 /* Pods-Audi */ = {
+			isa = PBXGroup;
+			children = (
+				D83AEC2E8362A6F6E0B89AC932CF103C /* Pods-Audi.modulemap */,
+				F2898FA6D2DADD18CC4D2AD7EB4F212D /* Pods-Audi-acknowledgements.markdown */,
+				A3EC4476545F69519D28572C199097D7 /* Pods-Audi-acknowledgements.plist */,
+				AE8E41FF3300D467E27F56C09122168F /* Pods-Audi-dummy.m */,
+				B3B537B0B9B55431029EE67D1EADF1CD /* Pods-Audi-frameworks.sh */,
+				43E74A564F5D76F05C5F5B6158C6F7EE /* Pods-Audi-Info.plist */,
+				D9795DE95C369ECA371DD68B9F51A904 /* Pods-Audi-umbrella.h */,
+				2E7A047FA4236829615A611B4C458C2E /* Pods-Audi.debug.xcconfig */,
+				DF38F4B12CFF5061E78D027055AB755D /* Pods-Audi.release.xcconfig */,
+			);
+			name = "Pods-Audi";
+			path = "Target Support Files/Pods-Audi";
+			sourceTree = "<group>";
+		};
+		700984A8EE4EF6D2136CC129280F1188 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6CD63046199C4EFE81B3045FDBB38CB2 /* Pods-Audi */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		AE5B9D2378F56666EEF2B9B6090DAB83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9BCAC98B260DA0255850F387A12EA851 /* GodAnimation.framework */,
+				4A53265CC9FC651634306413BA79BA34 /* Pods_Audi.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE9B346B3EEE7B5AE00A78A9382F343F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				266936016ABFAEF00AD2863834B44C95 /* GodAnimation.modulemap */,
+				D2B0263A1FF7EB978787B4F4CE3AF23F /* GodAnimation-dummy.m */,
+				64E2F36CC72081987F73147E9B041DB8 /* GodAnimation-Info.plist */,
+				98C74B3D36473C4BC1FC302B9BFB314E /* GodAnimation-prefix.pch */,
+				87F07C836FEE1B8A45D6E97F4D875933 /* GodAnimation-umbrella.h */,
+				BC58B06AD4716F01752D3E3F7CDC032E /* GodAnimation.debug.xcconfig */,
+				8B97235E8B4ACA61BDAE5D50819C49CC /* GodAnimation.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GodAnimation";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				406F1C4AFD9AA49E10526FCB3CAF328D /* Pods */,
+				AE5B9D2378F56666EEF2B9B6090DAB83 /* Products */,
+				700984A8EE4EF6D2136CC129280F1188 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D810A956513F2B481FA3BA2EA3EAFDDB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A030F53B9BE83DFCDF0B1C027C130488 /* Pods-Audi-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE1912BB94252C54E21F855993AD43F7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				630A50DED19F291F9D1496919EF2A50E /* GodAnimation-umbrella.h in Headers */,
+				8400C2AC7D7E120E5C7F3EE594D86348 /* GodAnimation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		79C02B9948A9D1AD617CAFEF70034A8C /* Pods-Audi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CA0693CAA6063C085511AF1B11EBB69 /* Build configuration list for PBXNativeTarget "Pods-Audi" */;
+			buildPhases = (
+				D810A956513F2B481FA3BA2EA3EAFDDB /* Headers */,
+				22FB5547E8C9CECC8AC5136FBAD16908 /* Sources */,
+				2837DB2FE5A24DB331292134C0351587 /* Frameworks */,
+				5E5D79D06D79D442AF626DA60EE2898A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CB3F10DFB3A814E7EC32823A806D0E4 /* PBXTargetDependency */,
+			);
+			name = "Pods-Audi";
+			productName = "Pods-Audi";
+			productReference = 4A53265CC9FC651634306413BA79BA34 /* Pods_Audi.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9DBB96D852AF2956A0A27F3C08DF3CEF /* GodAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AB4F147BE98EE2750759B0464DD58FA /* Build configuration list for PBXNativeTarget "GodAnimation" */;
+			buildPhases = (
+				FE1912BB94252C54E21F855993AD43F7 /* Headers */,
+				7F2B5F1DB4CE3BD80A8EC10061AD2104 /* Sources */,
+				37FF8E50321B83DEDDE03C6261F6EABF /* Frameworks */,
+				35EDBC850383AAE25B47443F66696FC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GodAnimation;
+			productName = GodAnimation;
+			productReference = 9BCAC98B260DA0255850F387A12EA851 /* GodAnimation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = AE5B9D2378F56666EEF2B9B6090DAB83 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9DBB96D852AF2956A0A27F3C08DF3CEF /* GodAnimation */,
+				79C02B9948A9D1AD617CAFEF70034A8C /* Pods-Audi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		35EDBC850383AAE25B47443F66696FC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E5D79D06D79D442AF626DA60EE2898A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22FB5547E8C9CECC8AC5136FBAD16908 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FF74447172DE7A450A080A5B573A575 /* Pods-Audi-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F2B5F1DB4CE3BD80A8EC10061AD2104 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A99E19CEA164CE8B0123B3849604B0A /* AnimationEnums.swift in Sources */,
+				37E63C2561EE5AA24214DA3A9742C09E /* GodAnimation-dummy.m in Sources */,
+				E863644892EFEDEC0DBD84F26937EFA5 /* GodAnimation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7CB3F10DFB3A814E7EC32823A806D0E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GodAnimation;
+			target = 9DBB96D852AF2956A0A27F3C08DF3CEF /* GodAnimation */;
+			targetProxy = BD6CD47990FC5B88F768FDA8B31CAFE3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0A9A863B42856C3A5BA7E86A14247880 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B97235E8B4ACA61BDAE5D50819C49CC /* GodAnimation.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GodAnimation/GodAnimation-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GodAnimation/GodAnimation-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/GodAnimation/GodAnimation.modulemap";
+				PRODUCT_MODULE_NAME = GodAnimation;
+				PRODUCT_NAME = GodAnimation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		450C0F6718804139EC3FC7DB4C3BDCC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E7A047FA4236829615A611B4C458C2E /* Pods-Audi.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Audi/Pods-Audi-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Audi/Pods-Audi.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8A3650F6C8AC2EFFA814EA61C37468B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A4F5CAAFD6B45C60AC623D1604150CAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF38F4B12CFF5061E78D027055AB755D /* Pods-Audi.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Audi/Pods-Audi-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Audi/Pods-Audi.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AF1F8D2941B0228930706FA0F2C9BB78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B028E5B9C74BE1A5D420F01F2CC14C25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC58B06AD4716F01752D3E3F7CDC032E /* GodAnimation.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GodAnimation/GodAnimation-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GodAnimation/GodAnimation-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/GodAnimation/GodAnimation.modulemap";
+				PRODUCT_MODULE_NAME = GodAnimation;
+				PRODUCT_NAME = GodAnimation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1AB4F147BE98EE2750759B0464DD58FA /* Build configuration list for PBXNativeTarget "GodAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B028E5B9C74BE1A5D420F01F2CC14C25 /* Debug */,
+				0A9A863B42856C3A5BA7E86A14247880 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A3650F6C8AC2EFFA814EA61C37468B1 /* Debug */,
+				AF1F8D2941B0228930706FA0F2C9BB78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CA0693CAA6063C085511AF1B11EBB69 /* Build configuration list for PBXNativeTarget "Pods-Audi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				450C0F6718804139EC3FC7DB4C3BDCC7 /* Debug */,
+				A4F5CAAFD6B45C60AC623D1604150CAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

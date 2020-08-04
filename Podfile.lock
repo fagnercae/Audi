@@ -1,0 +1,16 @@
+PODS:
+  - GodAnimation (0.0.3)
+
+DEPENDENCIES:
+  - GodAnimation
+
+SPEC REPOS:
+  trunk:
+    - GodAnimation
+
+SPEC CHECKSUMS:
+  GodAnimation: e35b1280113d7f2c9a31a19937f7bbd07f73e1ae
+
+PODFILE CHECKSUM: 7e68d09dafb58862dac42ef452fa13a9546229e1
+
+COCOAPODS: 1.9.3
