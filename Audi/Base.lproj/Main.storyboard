@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17140" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="z1t-Dl-vaw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="z1t-Dl-vaw">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17115"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17124"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -28,10 +29,21 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.34999999999999998" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="sqf-e5-FgI">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="115"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="277" height="71"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="71" id="IID-HE-Nth"/>
+                                    </constraints>
                                 </imageView>
+                                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="gjf-Wo-2hE">
+                                    <rect key="frame" x="0.0" y="71" width="414" height="56"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </searchBar>
                                 <label opaque="NO" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Audi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Te-VO-RZg">
-                                    <rect key="frame" x="160.66666666666666" y="37.666666666666664" width="93" height="39.999999999999993"/>
+                                    <rect key="frame" x="285" y="0.0" width="121" height="71"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="121" id="Tu9-Hn-bWP"/>
+                                        <constraint firstAttribute="height" constant="71" id="ySo-UC-HRr"/>
+                                    </constraints>
                                     <fontDescription key="fontDescription" name="AudiType-ExtendedBold" family="Audi Type" pointSize="32"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
@@ -39,12 +51,17 @@
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstItem="6Te-VO-RZg" firstAttribute="centerY" secondItem="mdI-9w-sAQ" secondAttribute="centerY" id="DXF-JQ-Cyp"/>
-                                <constraint firstItem="sqf-e5-FgI" firstAttribute="leading" secondItem="mdI-9w-sAQ" secondAttribute="leading" id="NXK-ab-d7J"/>
-                                <constraint firstAttribute="trailing" secondItem="sqf-e5-FgI" secondAttribute="trailing" id="UNp-yE-M3s"/>
-                                <constraint firstItem="sqf-e5-FgI" firstAttribute="top" secondItem="mdI-9w-sAQ" secondAttribute="top" id="fEh-0I-FgP"/>
-                                <constraint firstAttribute="bottom" secondItem="sqf-e5-FgI" secondAttribute="bottom" id="k1y-ek-yrM"/>
-                                <constraint firstItem="6Te-VO-RZg" firstAttribute="centerX" secondItem="mdI-9w-sAQ" secondAttribute="centerX" id="rVr-uM-cY4"/>
+                                <constraint firstItem="sqf-e5-FgI" firstAttribute="top" secondItem="mdI-9w-sAQ" secondAttribute="top" id="2WA-mB-IOc"/>
+                                <constraint firstItem="gjf-Wo-2hE" firstAttribute="top" secondItem="sqf-e5-FgI" secondAttribute="bottom" id="7VU-bM-boE"/>
+                                <constraint firstAttribute="trailing" secondItem="6Te-VO-RZg" secondAttribute="trailing" constant="8" id="Ik7-t8-I5Q"/>
+                                <constraint firstItem="gjf-Wo-2hE" firstAttribute="leading" secondItem="mdI-9w-sAQ" secondAttribute="leading" id="O8v-0v-MMM"/>
+                                <constraint firstAttribute="trailing" secondItem="gjf-Wo-2hE" secondAttribute="trailing" id="YUH-nO-gDf"/>
+                                <constraint firstItem="6Te-VO-RZg" firstAttribute="top" secondItem="mdI-9w-sAQ" secondAttribute="top" id="dTn-7B-scR"/>
+                                <constraint firstItem="gjf-Wo-2hE" firstAttribute="top" secondItem="6Te-VO-RZg" secondAttribute="bottom" id="dfL-iv-8TI"/>
+                                <constraint firstItem="gjf-Wo-2hE" firstAttribute="top" secondItem="sqf-e5-FgI" secondAttribute="bottom" id="gX0-ge-aw2"/>
+                                <constraint firstItem="sqf-e5-FgI" firstAttribute="leading" secondItem="mdI-9w-sAQ" secondAttribute="leading" id="i2M-Dk-x4E"/>
+                                <constraint firstAttribute="bottom" secondItem="gjf-Wo-2hE" secondAttribute="bottom" constant="-12" id="n6M-0K-z8Y"/>
+                                <constraint firstItem="6Te-VO-RZg" firstAttribute="leading" secondItem="sqf-e5-FgI" secondAttribute="trailing" constant="8" symbolic="YES" id="ueK-zz-SiX"/>
                             </constraints>
                         </view>
                         <prototypes>
@@ -94,6 +111,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Audi" id="CeM-Pb-5sC"/>
                     <connections>
+                        <outlet property="searchBar" destination="gjf-Wo-2hE" id="EKQ-vP-tRt"/>
                         <outlet property="vehiclesTableView" destination="9tg-M8-91e" id="3Yr-sH-Dfp"/>
                     </connections>
                 </tableViewController>
@@ -110,61 +128,72 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Audi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6nv-ts-lhI">
-                                <rect key="frame" x="20" y="44" width="374" height="28.666666666666671"/>
+                                <rect key="frame" x="20" y="44" width="374" height="28.333333333333329"/>
                                 <fontDescription key="fontDescription" name="AudiType-ExtendedNormal" family="Audi Type" pointSize="23"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A3 Sedan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewB-wH-TpK">
-                                <rect key="frame" x="20" y="327.66666666666669" width="374" height="27"/>
-                                <fontDescription key="fontDescription" name="AudiType-ExtendedNormal" family="Audi Type" pointSize="22"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ds-Pf-DAU">
-                                <rect key="frame" x="20" y="362.66666666666674" width="374" height="269.33333333333326"/>
-                                <color key="backgroundColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="AudiType-ExtendedNormal" family="Audi Type" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8eA-A7-yA8">
-                                <rect key="frame" x="0.0" y="95.666666666666686" width="414" height="224"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="crV-gL-Q4J">
+                                <rect key="frame" x="0.0" y="95" width="414" height="767"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="NEW-dk-Ruz">
+                                        <rect key="frame" x="0.0" y="8" width="414" height="628.33333333333337"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8eA-A7-yA8">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="224"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="224" id="cBI-Cs-yhi"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A3 Sedan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewB-wH-TpK">
+                                                <rect key="frame" x="0.0" y="249" width="414" height="27"/>
+                                                <fontDescription key="fontDescription" name="AudiType-ExtendedNormal" family="Audi Type" pointSize="22"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ds-Pf-DAU">
+                                                <rect key="frame" x="0.0" y="301" width="414" height="269.33333333333326"/>
+                                                <color key="backgroundColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="AudiType-ExtendedNormal" family="Audi Type" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="49r-WU-7Jh">
+                                                <rect key="frame" x="0.0" y="595.33333333333337" width="414" height="33"/>
+                                                <fontDescription key="fontDescription" name="AudiType-ExtendedNormal" family="Audi Type" pointSize="17"/>
+                                                <state key="normal" title="Voltar">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="closeButton:" destination="IXE-Tn-LoI" eventType="touchUpInside" id="lhy-4r-4oT"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="628.33333333333337" id="qC2-pZ-IDr"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="224" id="j7v-W0-urJ"/>
+                                    <constraint firstItem="NEW-dk-Ruz" firstAttribute="leading" secondItem="crV-gL-Q4J" secondAttribute="leading" id="VBa-Wk-YGs"/>
+                                    <constraint firstItem="NEW-dk-Ruz" firstAttribute="top" secondItem="crV-gL-Q4J" secondAttribute="top" constant="8" id="XxU-8r-K1Z"/>
+                                    <constraint firstItem="NEW-dk-Ruz" firstAttribute="centerX" secondItem="crV-gL-Q4J" secondAttribute="centerX" id="YT9-lj-G0t"/>
+                                    <constraint firstAttribute="trailing" secondItem="NEW-dk-Ruz" secondAttribute="trailing" id="hwc-wh-2Io"/>
+                                    <constraint firstAttribute="bottom" secondItem="NEW-dk-Ruz" secondAttribute="bottom" constant="130.66666666666663" id="hxi-h2-fjg"/>
                                 </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="49r-WU-7Jh">
-                                <rect key="frame" x="171" y="653" width="72" height="43"/>
-                                <fontDescription key="fontDescription" name="AudiType-ExtendedNormal" family="Audi Type" pointSize="17"/>
-                                <state key="normal" title="Voltar">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="closeButton:" destination="IXE-Tn-LoI" eventType="touchUpInside" id="lhy-4r-4oT"/>
-                                </connections>
-                            </button>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VwJ-Jh-sto"/>
                         <color key="backgroundColor" red="0.1058823529" green="0.1058823529" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="8eA-A7-yA8" firstAttribute="top" secondItem="6nv-ts-lhI" secondAttribute="bottom" constant="23" id="DEp-lB-lnk"/>
-                            <constraint firstItem="49r-WU-7Jh" firstAttribute="leading" secondItem="VwJ-Jh-sto" secondAttribute="leading" constant="171" id="K4M-j9-1XQ"/>
-                            <constraint firstItem="49r-WU-7Jh" firstAttribute="top" secondItem="8Ds-Pf-DAU" secondAttribute="bottom" constant="31" id="Nmw-jI-c06"/>
-                            <constraint firstItem="8eA-A7-yA8" firstAttribute="trailing" secondItem="VwJ-Jh-sto" secondAttribute="trailing" id="Ow6-qf-iaB"/>
-                            <constraint firstItem="6nv-ts-lhI" firstAttribute="leading" secondItem="VwJ-Jh-sto" secondAttribute="leading" constant="20" id="Oyf-45-elJ"/>
-                            <constraint firstItem="VwJ-Jh-sto" firstAttribute="trailing" secondItem="6nv-ts-lhI" secondAttribute="trailing" constant="20" id="WjP-hG-yFX"/>
-                            <constraint firstItem="6nv-ts-lhI" firstAttribute="top" secondItem="VwJ-Jh-sto" secondAttribute="top" id="Z7Q-Rw-Es1"/>
-                            <constraint firstItem="ewB-wH-TpK" firstAttribute="top" secondItem="8eA-A7-yA8" secondAttribute="bottom" constant="8" symbolic="YES" id="cJQ-Fz-XWy"/>
-                            <constraint firstItem="VwJ-Jh-sto" firstAttribute="trailing" secondItem="49r-WU-7Jh" secondAttribute="trailing" constant="171" id="fZr-y1-iOD"/>
-                            <constraint firstItem="VwJ-Jh-sto" firstAttribute="bottom" secondItem="49r-WU-7Jh" secondAttribute="bottom" constant="166" id="hcr-lR-hCI"/>
-                            <constraint firstItem="8eA-A7-yA8" firstAttribute="leading" secondItem="VwJ-Jh-sto" secondAttribute="leading" id="k4w-pR-Im5"/>
-                            <constraint firstItem="VwJ-Jh-sto" firstAttribute="trailing" secondItem="8Ds-Pf-DAU" secondAttribute="trailing" constant="20" id="n4M-mf-Za9"/>
-                            <constraint firstItem="VwJ-Jh-sto" firstAttribute="trailing" secondItem="ewB-wH-TpK" secondAttribute="trailing" constant="20" id="rb2-Qh-WzA"/>
-                            <constraint firstItem="8Ds-Pf-DAU" firstAttribute="leading" secondItem="VwJ-Jh-sto" secondAttribute="leading" constant="20" id="vq5-kC-M9o"/>
-                            <constraint firstItem="ewB-wH-TpK" firstAttribute="leading" secondItem="VwJ-Jh-sto" secondAttribute="leading" constant="20" id="wBu-in-vNy"/>
-                            <constraint firstItem="8Ds-Pf-DAU" firstAttribute="top" secondItem="ewB-wH-TpK" secondAttribute="bottom" constant="8" symbolic="YES" id="xWL-9L-y1P"/>
+                            <constraint firstItem="6nv-ts-lhI" firstAttribute="leading" secondItem="g8R-jE-enb" secondAttribute="leadingMargin" id="3xg-33-r2U"/>
+                            <constraint firstItem="crV-gL-Q4J" firstAttribute="centerX" secondItem="g8R-jE-enb" secondAttribute="centerX" id="9Gq-BP-ZNq"/>
+                            <constraint firstItem="6nv-ts-lhI" firstAttribute="centerX" secondItem="crV-gL-Q4J" secondAttribute="centerX" id="CTj-e0-bAF"/>
+                            <constraint firstItem="6nv-ts-lhI" firstAttribute="top" secondItem="VwJ-Jh-sto" secondAttribute="top" id="k4k-3y-oNh"/>
+                            <constraint firstItem="crV-gL-Q4J" firstAttribute="leading" secondItem="VwJ-Jh-sto" secondAttribute="leading" id="uTY-Ya-kCl"/>
+                            <constraint firstItem="crV-gL-Q4J" firstAttribute="top" secondItem="g8R-jE-enb" secondAttribute="top" constant="95" id="wNz-Sv-7cV"/>
+                            <constraint firstItem="crV-gL-Q4J" firstAttribute="bottom" secondItem="VwJ-Jh-sto" secondAttribute="bottom" id="yBg-hM-OaT"/>
                         </constraints>
                     </view>
                     <connections>

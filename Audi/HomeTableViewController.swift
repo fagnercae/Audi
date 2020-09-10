@@ -8,16 +8,21 @@
 import UIKit
 import GodAnimation
 
-class HomeTableViewController: UITableViewController {
+class HomeTableViewController: UITableViewController, UISearchBarDelegate {
     
     @IBOutlet weak var vehiclesTableView: UITableView!
-    let vehiclesList: Array<Vehicles> = VehiclesDAO().returnAllVehicles()
-
+    var vehiclesList: Array<Vehicles> = VehiclesDAO().returnAllVehicles()
+    var vehiclesFiltered: Array<Vehicles>!
+    @IBOutlet weak var searchBar: UISearchBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         vehiclesTableView.delegate = self
         vehiclesTableView.dataSource = self
+        searchBar.delegate = self
+        vehiclesFiltered = vehiclesList
         setupInterface()
+        tableView.keyboardDismissMode = .onDrag
     }
     
     // MARK: - Methods
@@ -35,12 +40,12 @@ class HomeTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return vehiclesList.count
+        return vehiclesFiltered.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
-        let vehicles = vehiclesList[indexPath.row]
+        let vehicles = vehiclesFiltered[indexPath.row]
         cell.carModelNameLabel.text = vehicles.model
         cell.carImageView.image = UIImage(named: vehicles.picture)
 
@@ -57,10 +62,39 @@ class HomeTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vehicle = vehiclesList[indexPath.row]
+        let vehicle = vehiclesFiltered[indexPath.row]
         let controller = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(identifier: "details") as! DetailsViewController
         controller.selectedCar = vehicle
         self.navigationController?.pushViewController(controller, animated: true)
+        
+    }
+    
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            vehiclesFiltered.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+            tableView.reloadData()
+        }
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        vehiclesFiltered = []
+        
+        if searchText == "" {
+            vehiclesFiltered = vehiclesList
+        }
+        else {
+            for car in vehiclesList {
+                if car.model.lowercased().starts(with: searchText.lowercased()) {
+                    vehiclesFiltered.append(car)
+                }
+            }
+        }
+        self.tableView.reloadData()
     }
 
 }

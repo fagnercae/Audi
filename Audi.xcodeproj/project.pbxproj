@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -82,7 +82,6 @@
 				7D4354FD24D76EFF00563A44 /* Fonts */,
 				7D4354E924D76CBA00563A44 /* AppDelegate.swift */,
 				7D4354EB24D76CBA00563A44 /* SceneDelegate.swift */,
-				7D68891B24D83B9200E8931E /* HomeTableViewController.swift */,
 				7D4354EF24D76CBA00563A44 /* Main.storyboard */,
 				7D4354F224D76CBC00563A44 /* Assets.xcassets */,
 				7D4354F424D76CBC00563A44 /* LaunchScreen.storyboard */,
@@ -90,6 +89,7 @@
 				7D68891D24D83C1900E8931E /* Vehicles.swift */,
 				7D68891F24D83E7E00E8931E /* VehiclesDAO.swift */,
 				7D68892124D841C200E8931E /* TableViewCell.swift */,
+				7D68891B24D83B9200E8931E /* HomeTableViewController.swift */,
 				7D68892324D84E3100E8931E /* DetailsViewController.swift */,
 			);
 			path = Audi;
@@ -120,7 +120,6 @@
 				C06AB1CA65F1978E6C8EFF26 /* Pods-Audi.debug.xcconfig */,
 				047298EBB1B9873A5794EEDD /* Pods-Audi.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -325,7 +324,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -380,7 +379,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
